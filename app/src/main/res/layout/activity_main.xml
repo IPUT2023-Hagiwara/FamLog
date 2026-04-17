@@ -10,33 +10,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PoiLog"
-        android:textSize="50sp"
+        android:text="ジャーナリング記録"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.079" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="142dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="36dp"
-        android:text="戻る"
+        android:layout_width="308dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="116dp"
+        android:text="1日の記録"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="158dp"
-        android:layout_height="63dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="36dp"
-        android:text="次へ"
+        android:layout_width="306dp"
+        android:layout_height="151dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="372dp"
+        android:text="今の記録"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="274dp"
+        android:layout_height="39dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
 
 </android.support.constraint.ConstraintLayout>
