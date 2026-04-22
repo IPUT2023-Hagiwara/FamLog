@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4FA"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← アカウントログインに戻る"
+        android:textColor="#F2A6AF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:text="アカウント登録"
+        android:textColor="#F2A6AF"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_panel"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="メールアドレス"
+            android:textColor="#2F2F39"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_box"
+            android:hint="アカウント名を入力して下さい"
+            android:inputType="textEmailAddress"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="パスワード"
+            android:textColor="#2F2F39"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_box"
+            android:hint="パスワードを入力して下さい"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisterNext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F3B0B6"
+        android:text="次へ"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
