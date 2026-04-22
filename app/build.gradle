@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.poilog'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.poilog"
         minSdk 24
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -39,4 +39,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.android.material:material:1.12.0'
 }
