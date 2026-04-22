@@ -37,7 +37,8 @@
         android:layout_marginStart="24dp"
         android:text="うれしい"
         app:layout_constraintTop_toTopOf="@id/button8"
-        app:layout_constraintStart_toEndOf="@id/button8" />
+        app:layout_constraintStart_toEndOf="@id/button8"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Circle" />
 
     <Button
         android:id="@+id/button12"
