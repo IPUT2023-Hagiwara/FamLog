@@ -1,5 +1,6 @@
 package com.example.poilog
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -47,6 +48,18 @@ class MainActivity2 : AppCompatActivity() {
                 healthButtons.forEach { it.setBackgroundColor(Color.LTGRAY) }
                 selectedButton.setBackgroundColor(Color.GREEN) // Healthは緑にするなど色を変えてもOK
             }
+        }
+        val buttonNext = findViewById<Button>(R.id.button21)
+
+        buttonNext.setOnClickListener {
+            val intent = Intent(this, MainActivity4::class.java)
+            startActivity(intent)
+        }
+        val buttonOther = findViewById<Button>(R.id.button20)
+        buttonOther.setOnClickListener {
+            // 移動先を MainActivi3.xml
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
