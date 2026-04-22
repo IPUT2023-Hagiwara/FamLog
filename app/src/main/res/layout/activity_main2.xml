@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,235 +8,228 @@
     tools:context=".MainActivity2">
 
     <TextView
+        android:id="@+id/titleFeeling"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Select Feeling"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Health"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Journaling"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintHorizontal_bias="0.102" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="256dp"
-        android:text="だるい"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="54dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="328dp"
-        android:text="緊張"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="256dp"
-        android:text="眠い"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="256dp"
-        android:text="痛い"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="328dp"
-        android:text="元気"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="308dp"
-        android:layout_marginBottom="256dp"
-        android:text="疲労"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="308dp"
-        android:layout_marginBottom="336dp"
-        android:text="好調"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="53dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="328dp"
-        android:text="普通"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="54dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginBottom="492dp"
-        android:text="悲しい"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="56dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="492dp"
-        android:text="怒り"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+    <!-- Feeling 1段目 -->
     <Button
         android:id="@+id/button8"
         android:layout_width="56dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="308dp"
-        android:layout_marginBottom="572dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
         android:text="面白い"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/titleFeeling"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="56dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="572dp"
+        android:layout_marginStart="24dp"
         android:text="うれしい"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="56dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="492dp"
-        android:text="くるしい"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button8"
+        app:layout_constraintStart_toEndOf="@id/button8" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="56dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="572dp"
+        android:layout_marginStart="24dp"
         android:text="まあまあ"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button8"
+        app:layout_constraintStart_toEndOf="@id/button10" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="56dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="572dp"
+        android:layout_marginStart="24dp"
         android:text="普通"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button8"
+        app:layout_constraintStart_toEndOf="@id/button12" />
+
+    <!-- Feeling 2段目 -->
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:text="悲しい"
+        app:layout_constraintTop_toBottomOf="@id/button8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:text="くるしい"
+        app:layout_constraintTop_toTopOf="@id/button5"
+        app:layout_constraintStart_toEndOf="@id/button5" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="56dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="492dp"
+        android:layout_marginStart="24dp"
         android:text="不安"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button5"
+        app:layout_constraintStart_toEndOf="@id/button11" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:text="怒り"
+        app:layout_constraintTop_toTopOf="@id/button5"
+        app:layout_constraintStart_toEndOf="@id/button14" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Health"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102" />
+
+    <!-- Health 1段目 -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:text="好調"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:text="元気"
+        app:layout_constraintTop_toTopOf="@id/button6"
+        app:layout_constraintStart_toEndOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="53dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:text="普通"
+        app:layout_constraintTop_toTopOf="@id/button6"
+        app:layout_constraintStart_toEndOf="@id/button4" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:text="緊張"
+        app:layout_constraintTop_toTopOf="@id/button6"
+        app:layout_constraintStart_toEndOf="@id/button" />
+
+    <!-- Health 2段目 -->
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:text="疲労"
+        app:layout_constraintTop_toBottomOf="@id/button6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:text="眠い"
+        app:layout_constraintTop_toTopOf="@id/button16"
+        app:layout_constraintStart_toEndOf="@id/button16" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:text="だるい"
+        app:layout_constraintTop_toTopOf="@id/button16"
+        app:layout_constraintStart_toEndOf="@id/button17" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:text="痛い"
+        app:layout_constraintTop_toTopOf="@id/button16"
+        app:layout_constraintStart_toEndOf="@id/button18" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Journaling"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/button16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="365dp"
+        android:layout_width="0dp"
         android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:maxLength="20"   app:layout_constraintEnd_toEndOf="parent"
+        android:maxLength="20"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button20"
         android:layout_width="123dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="220dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
         android:text="戻る"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
         android:id="@+id/button21"
         android:layout_width="120dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:text="次へ"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
